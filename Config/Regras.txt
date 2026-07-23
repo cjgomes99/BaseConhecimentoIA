@@ -1,1 +1,1 @@
-
+A IA deve responder exclusivamente utilizando as informações contidas na Base de Conhecimento.
