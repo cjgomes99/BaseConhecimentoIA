@@ -1,0 +1,46 @@
+ID: 
+GW-002 
+
+Sistema: 
+Google Workspace
+
+Categoria: 
+Drive Privado
+
+Procedimento: 
+Acesso ao Drive
+
+Objetivo:
+Tratar acessos ao Drive Privado da unidade
+
+Quem pode solicitar:
+- Chefia da unidade/Chefe do servidor ou estagiário
+
+Quem executa:
+- Equipe 1N Administração de Usuário
+
+Pré-requisitos:
+- Possui E-mail Institucional já criado
+
+Informações necessárias:
+- Nome completo
+- CPF
+- Nome da unidade a ser concedida
+
+Prazo:
+Depende da filda do ADM. Em geral é atendido dentro de 10h uteis.
+
+Fluxo:
+1. Chefia solicita.
+2. Equipe 1N Admin concede a role.
+
+Observações:
+O Drive privado não permite que seu conteúdo seja compartilhado com usuários externos.
+Para que possa ocorrer o compartilhamento, os usuários envolvidos devem ter acesso concedido
+mediante solicitção da chefia à Central de Serviços, a qual o 1N Administração pertence.
+
+Palavras-chave:
+- Drive
+- Pasta do Google
+- Drive privado
+- Drive da unidade

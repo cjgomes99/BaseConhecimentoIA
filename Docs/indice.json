@@ -1,0 +1,50 @@
+[
+    {
+        "id": "GW-001",
+        "sistema": "Google Workspace",
+        "categoria": "E-mail",
+        "procedimento": "Criação de E-mail Institucional",
+        "arquivo": "Google Workspace/Criacao_Email.txt",
+        "palavrasChave": [
+            "e-mail",
+            "conta institucional",
+            "Google Workspace",
+            "Gmail"
+        ]
+    },
+    {
+        "id": "GW-002",
+        "sistema": "Google Workspace",
+        "categoria": "Drive Privado",
+        "procedimento": "Acesso ao Drive",
+        "arquivo": "Google Workspace/Drive_Privado.txt",
+        "palavrasChave": [
+            "Drive",
+            "Pasta do Google",
+            "Drive privado",
+            "Drive da unidade"
+        ]
+    },
+    {
+        "id": "GW-003",
+        "sistema": "Google Workspace",
+        "categoria": "Drive Publico",
+        "procedimento": "Acesso ao Drive Publico",
+        "arquivo": "Google Workspace/Drive_Publico.txt",
+        "palavrasChave": [
+            "Drive Publico",
+            "Drive compartilhado"
+        ]
+    },
+    {
+        "id": "GW-004",
+        "sistema": "Malote Digital",
+        "categoria": "Malote Digital",
+        "procedimento": "Criação de usuário no Malote Digital",
+        "arquivo": "Malote Digital/Acesso_Malote_Digital.txt",
+        "palavrasChave": [
+            "Criar acesso Malote",
+            "Malote Digital"
+        ]
+    }
+]

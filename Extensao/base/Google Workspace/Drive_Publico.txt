@@ -1,0 +1,44 @@
+ID: 
+GW-003 
+
+Sistema: 
+Google Workspace
+
+Categoria: 
+Drive Publico
+
+Procedimento: 
+Acesso ao Drive Publico
+
+Objetivo:
+Coneder acesso ao Drive Publico de Unidade
+
+Quem pode solicitar:
+- Não há necidade de solicitação a STI/Central de Serviços, visto que esta ação é realizada pelo
+Administrador da pasta Drive. Gerlamente é o gestor da unidade.
+
+Quem executa:
+Não há necidade de solicitação a STI/Central de Serviços, visto que esta ação é realizada pelo
+Administrador da pasta Drive. Gerlamente é o gestor da unidade.
+
+Pré-requisitos:
+- Possuir E-mail Institucional criado
+
+Informações necessárias:
+- Nome completo
+- CPF
+
+Prazo:
+Não há prazo determinado, visto que esta ação fica a cargo do Administrador do Drive. 
+Chefe da Unidade
+
+Fluxo:
+Solicitar a chefia da unidade
+
+Observações:
+Os arquivo desde Drive podem ser compartilhado com publico externo, mediado pelo chefe da unidade.
+
+Palavras-chave:
+- Drive Publico
+- Drive compartilhado
+

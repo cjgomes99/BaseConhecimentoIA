@@ -6,7 +6,7 @@ const UI = {
 
         const campo = document.getElementById("pergunta");
 
-        botao.addEventListener("click", () => {
+       botao.addEventListener("click", () => {
 
             const texto = campo.value.trim();
 
@@ -14,10 +14,19 @@ const UI = {
                 return;
             }
 
+            // Exibe a pergunta do usuário
             Chat.adicionarMensagem(texto, "usuario");
 
+            // Consulta a Base (simulada)
+            const resposta = await API.consultar(texto);
+
+            // Exibe a resposta
+            Chat.adicionarMensagem(resposta, "ia");
+
+            // Limpa o campo
             campo.value = "";
 
+            // Volta o foco
             campo.focus();
 
         });

@@ -15,4 +15,17 @@
   "permissions": [
     "sidePanel"
   ]
+  ,
+"web_accessible_resources": [
+  {
+    "resources": [
+      "base/*",
+      "base/**/*"
+    ],
+    "matches": [
+      "<all_urls>"
+    ]
+  }
+]
+ 
 }
