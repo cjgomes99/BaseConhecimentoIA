@@ -6,7 +6,7 @@ const UI = {
 
         const campo = document.getElementById("pergunta");
 
-       botao.addEventListener("click", () => {
+       botao.addEventListener("click", async () => {
 
             const texto = campo.value.trim();
 
