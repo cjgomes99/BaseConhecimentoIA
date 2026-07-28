@@ -8,6 +8,18 @@ const API = {
 
         const indice = await resposta.json();
 
+        const pesquisa = pergunta.toLowerCase();
+
+const documento = indice.find(doc => {
+
+    return doc.palavrasChave.some(palavra =>
+        pesquisa.includes(palavra.toLowerCase())
+    );
+
+});
+
+        
+
         console.log(indice);
 
         return "Teste realizado.";
