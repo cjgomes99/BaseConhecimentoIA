@@ -1,3 +1,5 @@
+console.log("interpretador carregado");
+
 const Interpretador = {
 
     responder(pergunta, documento) {
