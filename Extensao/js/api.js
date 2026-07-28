@@ -55,11 +55,13 @@ const API = {
 
          console.log(dadosDocumento);
 
-    if (pergunta.toLowerCase().includes("prazo")) {
+    const resposta = Interpretador.responder(pergunta, dadosDocumento);
 
-    return "Prazo:\n\n" + dadosDocumento["Prazo"];
+        if (resposta) {
 
-}
+             return resposta;
+
+        }
 
 return conteudo;
 
