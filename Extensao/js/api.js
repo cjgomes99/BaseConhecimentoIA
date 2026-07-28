@@ -18,13 +18,17 @@ const documento = indice.find(doc => {
 
 });
 
-        
-
         console.log(indice);
 
         if (documento) {
 
-    return documento.procedimento;
+    const respostaArquivo = await fetch(
+        chrome.runtime.getURL("base/" + documento.arquivo)
+    );
+
+    const conteudo = await respostaArquivo.text();
+
+    return conteudo;
 
 }
 
