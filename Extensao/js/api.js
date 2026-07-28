@@ -96,9 +96,9 @@ const documento = indice.find(doc => {
     );
 
     const conteudo = await respostaArquivo.text();
-    const documento = converterDocumento(conteudo);
+    const dadosDocumento = converterDocumento(conteudo);
 
-         console.log(documento);
+         console.log(dadosDocumento);
 
     if (pesquisa.includes("prazo")) {
 
