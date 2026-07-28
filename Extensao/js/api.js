@@ -92,7 +92,7 @@ const API = {
 
          console.log(dadosDocumento);
 
-    if (pesquisa.includes("prazo")) {
+    if (pergunta.toLowerCase().includes("prazo")) {
 
     return "Prazo:\n\n" + dadosDocumento["Prazo"];
 
