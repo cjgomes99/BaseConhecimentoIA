@@ -22,7 +22,13 @@ const documento = indice.find(doc => {
 
         console.log(indice);
 
-        return "Teste realizado.";
+        if (documento) {
+
+    return documento.procedimento;
+
+}
+
+return "Não encontrei informações sobre esse procedimento na Base de Conhecimento disponível.";
 
     }
 
