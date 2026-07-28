@@ -85,7 +85,7 @@ const API = {
 
     const conteudo = await Leitor.ler(documento.arquivo);
 
-    const dadosDocumento = converterDocumento(conteudo);
+    const dadosDocumento = Parser.converter(conteudo);
 
          console.log(dadosDocumento);
 
