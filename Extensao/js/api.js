@@ -1,3 +1,37 @@
+function extrairCampo(texto, campo) {
+
+    const linhas = texto.split("\n");
+
+    for (let i = 0; i < linhas.length; i++) {
+
+        if (linhas[i].trim().toLowerCase() === `${campo.toLowerCase()}:`) {
+
+            let resposta = "";
+
+            for (let j = i + 1; j < linhas.length; j++) {
+
+                const linha = linhas[j].trim();
+
+                if (linha === "") {
+                    break;
+                }
+
+                resposta += linha + "\n";
+
+            }
+
+            return resposta.trim();
+
+        }
+
+    }
+
+    return null;
+
+}
+
+
+
 const API = {
 
     async consultar(pergunta) {
@@ -28,7 +62,13 @@ const documento = indice.find(doc => {
 
     const conteudo = await respostaArquivo.text();
 
-    return conteudo;
+    if (pesquisa.includes("prazo")) {
+
+    return "Prazo:\n\n" + extrairCampo(conteudo, "Prazo");
+
+}
+
+return conteudo;
 
 }
 
