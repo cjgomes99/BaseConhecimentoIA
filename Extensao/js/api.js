@@ -102,7 +102,7 @@ const documento = indice.find(doc => {
 
     if (pesquisa.includes("prazo")) {
 
-    return "Prazo:\n\n" + extrairCampo(conteudo, "Prazo");
+    return "Prazo:\n\n" + dadosDocumento["Prazo"];
 
 }
 
