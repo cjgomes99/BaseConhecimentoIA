@@ -8,7 +8,7 @@ const Chat = {
 
         mensagem.className = `mensagem ${tipo}`;
 
-        mensagem.textContent = texto;
+        mensagem.innerHTML = texto.replace(/\n/g, "<br>");
 
         chat.appendChild(mensagem);
 
