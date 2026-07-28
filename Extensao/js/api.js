@@ -83,11 +83,8 @@ const API = {
 
         if (documento) {
 
-    const respostaArquivo = await fetch(
-        chrome.runtime.getURL("base/" + documento.arquivo)
-    );
+    const conteudo = await Leitor.ler(documento.arquivo);
 
-    const conteudo = await respostaArquivo.text();
     const dadosDocumento = converterDocumento(conteudo);
 
          console.log(dadosDocumento);
