@@ -11,6 +11,8 @@ const API = {
 
         const documento = Localizador.localizar(indice, pergunta);
 
+        console.log(documento);
+
         if (documento) {
 
             const conteudo = await Leitor.ler(documento.arquivo);
