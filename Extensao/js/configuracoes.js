@@ -1,4 +1,3 @@
-console.log("configuracoes.js carregado");
 
 document.addEventListener("DOMContentLoaded", async () => {
 
@@ -7,8 +6,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const botaoSalvar = document.getElementById("salvar");
 
     const apiKey = await Storage.obter("apiKey");
-
-    console.log("API armazenada:", apiKey);
 
     botaoSalvar.addEventListener("click", async () => {
 
@@ -25,8 +22,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         await Storage.salvar("apiKey", apiKey);
 
         const teste = await Storage.obter("apiKey");
-
-        console.log("Valor salvo:", teste);
 
         alert("Chave salva com sucesso.");
 
