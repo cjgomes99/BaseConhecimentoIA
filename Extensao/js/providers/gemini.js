@@ -10,13 +10,51 @@ const Gemini = {
 
         }
 
-        console.log("API Key encontrada.");
+        const resposta = await fetch(
 
-        console.log(apiKey);
+            `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`,
 
-        console.log(contexto);
+            {
 
-        return "Conexão preparada.";
+                method: "POST",
+
+                headers: {
+
+                    "Content-Type": "application/json"
+
+                },
+
+                body: JSON.stringify({
+
+                    contents: [
+
+                        {
+
+                            parts: [
+
+                                {
+
+                                    text: "Olá"
+
+                                }
+
+                            ]
+
+                        }
+
+                    ]
+
+                })
+
+            }
+
+        );
+
+        const dados = await resposta.json();
+
+        console.log(dados);
+
+        return "Consulta enviada.";
 
     }
 
