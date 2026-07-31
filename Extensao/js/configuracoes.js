@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const botaoSalvar = document.getElementById("salvar");
 
+    const apiKey = await Storage.obter("apiKey");
+
+            console.log(apiKey);
+
     botaoSalvar.addEventListener("click", async () => {
 
         const apiKey = campoApi.value.trim();
