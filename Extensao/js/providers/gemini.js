@@ -1,8 +1,8 @@
 const Gemini = {
 
-    async responder(pergunta, documento, configuracao) {
+    async responder(contexto) {
 
-        console.log(configuracao);
+        console.log(contexto);
 
         return "Gemini ainda não configurado.";
 

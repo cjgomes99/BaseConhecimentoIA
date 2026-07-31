@@ -8,11 +8,15 @@ const IA = {
 
             case "gemini":
 
-                return await Gemini.responder(
+                return await Gemini.responder({
+
                     pergunta,
+
                     documento,
+
                     configuracao
-                );
+
+                });
 
             default:
 

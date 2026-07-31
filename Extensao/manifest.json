@@ -16,6 +16,12 @@
     "sidePanel"
   ]
   ,
+
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*"
+  ]
+  ,
+
 "web_accessible_resources": [
   {
     "resources": [
