@@ -6,7 +6,9 @@ const UI = {
 
         const campo = document.getElementById("pergunta");
 
-       botao.addEventListener("click", async () => {
+        const botaoConfiguracoes = document.getElementById("configuracoes");
+
+        botao.addEventListener("click", async () => {
 
             const texto = campo.value.trim();
 
@@ -17,7 +19,7 @@ const UI = {
             // Exibe a pergunta do usuário
             Chat.adicionarMensagem(texto, "usuario");
 
-            // Consulta a Base (simulada)
+            // Consulta a Base
             const resposta = await API.consultar(texto);
 
             // Exibe a resposta
@@ -28,6 +30,15 @@ const UI = {
 
             // Volta o foco
             campo.focus();
+
+        });
+
+        botaoConfiguracoes.addEventListener("click", () => {
+
+            window.open(
+                chrome.runtime.getURL("pages/configuracoes.html"),
+                "_blank"
+            );
 
         });
 
