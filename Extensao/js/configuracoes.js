@@ -2,20 +2,36 @@ console.log("configuracoes.js carregado");
 
 document.addEventListener("DOMContentLoaded", async () => {
 
-    console.log("1");
-
     const campoApi = document.getElementById("apikey");
-
-    console.log("2");
 
     const botaoSalvar = document.getElementById("salvar");
 
-    console.log("3");
-
     const apiKey = await Storage.obter("apiKey");
 
-    console.log("4");
+    console.log("API armazenada:", apiKey);
 
-    console.log(apiKey);
+    botaoSalvar.addEventListener("click", async () => {
+
+        const apiKey = campoApi.value.trim();
+
+        if (apiKey === "") {
+
+            alert("Informe a chave de acesso da IA.");
+
+            return;
+
+        }
+
+        await Storage.salvar("apiKey", apiKey);
+
+        const teste = await Storage.obter("apiKey");
+
+        console.log("Valor salvo:", teste);
+
+        alert("Chave salva com sucesso.");
+
+        campoApi.value = "";
+
+    });
 
 });
