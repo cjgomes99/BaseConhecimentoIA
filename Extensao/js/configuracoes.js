@@ -1,3 +1,5 @@
+console.log("configuracoes.js carregado");
+
 document.addEventListener("DOMContentLoaded", async () => {
 
     const campoApi = document.getElementById("apikey");
