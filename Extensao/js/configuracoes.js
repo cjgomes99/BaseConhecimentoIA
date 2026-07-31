@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
 
     const campoApi = document.getElementById("apikey");
 
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (apiKey === "") {
 
-            alert("Informe a API Key.");
+            alert("Informe a chave de acesso da IA.");
 
             return;
 
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         await Storage.salvar("apiKey", apiKey);
 
-        alert("API Key salva com sucesso.");
+        alert("Chave salva com sucesso.");
 
         campoApi.value = "";
 
