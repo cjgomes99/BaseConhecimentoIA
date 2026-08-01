@@ -11,14 +11,16 @@ const Gemini = {
         }
 
         const resposta = await fetch(
-
             `https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`
-
         );
 
-        const dados = await resposta.json();
+        console.log("Status:", resposta.status);
 
-        console.log(dados);
+        console.log("OK:", resposta.ok);
+
+        const texto = await resposta.text();
+
+        console.log(texto);
 
         return "Modelos consultados.";
 
