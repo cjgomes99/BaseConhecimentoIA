@@ -11,18 +11,58 @@ const Gemini = {
         }
 
         const resposta = await fetch(
-            `https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`
+
+            `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`,
+
+            {
+
+                method: "POST",
+
+                headers: {
+
+                    "Content-Type": "application/json"
+
+                },
+
+                body: JSON.stringify({
+
+                    contents: [
+
+                        {
+
+                            parts: [
+
+                                {
+
+                                    text: "Olá"
+
+                                }
+
+                            ]
+
+                        }
+
+                    ]
+
+                })
+
+            }
+
         );
 
         console.log("Status:", resposta.status);
 
-        console.log("OK:", resposta.ok);
+        const dados = await resposta.json();
 
-        const texto = await resposta.text();
+        console.log(dados);
 
-        console.log(texto);
+        if (!resposta.ok) {
 
-        return "Modelos consultados.";
+            return dados.error?.message || "Erro ao consultar o Gemini.";
+
+        }
+
+        return dados.candidates[0].content.parts[0].text;
 
     }
 
